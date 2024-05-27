@@ -48,12 +48,26 @@ h1, h2 {
     border-color: #ff4500;
 }
 
+/* transparancia nav bar------------------------------- */
+/* Estilo para hacer el fondo del menú de navegación casi transparente */
+.navbar-light.bg-light {
+    background-color: rgba(255, 255, 255, 0.8) !important; /* Blanco con 80% de opacidad */
+    transition: background-color 0.3s;
+}
+
+/* Opcional: Cambiar el color del texto del menú para mejor visibilidad */
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+
 /* Estilos para las tarjetas de servicios */
 .card {
     border: none;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -114,3 +128,27 @@ footer {
 .goog-te-banner-frame.skiptranslate {
     display: none !important;
 } 
+.z-index-100 {
+    margin-right: 100px;
+   
+    
+}
+
+header{
+    background-image: url('https://images.pexels.com/photos/4307061/pexels-photo-4307061.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*-----------------imagen*/
+/* Ajustar el tamaño máximo de las imágenes en las tarjetas */
+.card img {
+    max-width: 100%;
+    max-height: 300px; /* Ajusta este valor según tus necesidades */
+    object-fit:cover; 
+    object-position:bottom; 
+    /* Asegura que la imagen se recorte para llenar el contenedor */
+}
+
