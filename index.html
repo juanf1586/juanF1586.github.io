@@ -21,8 +21,17 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Servicios</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Servicios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="#dental-services">Cirugías Dentales</a>
+                        <a class="dropdown-item" href="#stone-services">Pulverizaciones de Piedras</a>
+                        <a class="dropdown-item" href="#rhinoplasty-services">Rinoplastias</a>
+                        <a class="dropdown-item" href="#liposuction-services">Liposucciones</a>
+                        <a class="dropdown-item" href="#knee-services">Cirugías de Rodillas</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#testimonials">Testimonios</a>
@@ -38,29 +47,35 @@
                 </li>
             </ul>
         </div>
-        <div id="google_translate_element" style="position: absolute; top: 10px; right: 10px;">idioma</div>
+        <div class="z-index-100 " id="google_translate_element" style="position: absolute; top: 10px; right: 10px; z-index: 10000;">idioma</div>
     </nav>
     
-
+    <div class="z-index-100 " id="google_translate_element" style="position: absolute; top: 10px; right: 10px; z-index: 10000;">idioma</div>
 
     <header class="jumbotron text-center" style="padding-top: 200px;">
+        
         <h1 class="display-4">Bienvenido a Salud en Perú</h1>
         <p class="lead">Ofrecemos servicios médicos asequibles y de calidad en Perú para ciudadanos estadounidenses.</p>
         <a href="#services" class="btn btn-primary btn-lg">Conoce nuestros servicios</a>
     </header>
 
     <div class="container mt-5" id="services">
-        <h2>Servicios</h2>
-        <p>Ofrecemos una variedad de servicios médicos incluyendo cirugías dentales, pulverizaciones de piedras en los riñones y vesícula, rinoplastias, liposucciones y cirugías de rodillas.</p>
+        <div class="service-intro">
+            <h2>Servicios</h2>
+            <p>Ofrecemos una variedad de servicios médicos incluyendo cirugías dentales, pulverizaciones de piedras en los riñones y vesícula, rinoplastias, liposucciones y cirugías de rodillas. Además, proporcionamos servicios adicionales para asegurar que tu experiencia sea cómoda y sin complicaciones.</p>
+            <p>Opcionalmente, incluimos servicios de alojamiento y movilidad para la atención clínica. Te ofrecemos alojamiento en uno de los mejores y más turísticos distritos de Perú: Miraflores. Te garantizamos un ambiente seguro, limpio y hermoso durante tu estancia. Además, ofrecemos opciones adicionales para el transporte entre el hotel y el centro clínico, según tus necesidades.</p>
+            <p>Nuestro personal está altamente calificado y cuenta con años de experiencia en sus respectivos campos. Estamos comprometidos a proporcionar la mejor atención posible y asegurar que te sientas cómodo y bien atendido en todo momento.</p>
+            <p>También proporcionamos un servicio de intérprete para asegurar que la barrera del idioma no sea un problema. A través de nuestra aplicación del centro médico, siempre habrá alguien disponible para asistirte con cualquier necesidad lingüística que puedas tener.</p>
+        </div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/dental.jpg" class="card-img-top" alt="Cirugías Dentales">
+            <div class="col-md-4 mb-5 " id="dental-services">
+                <div class="card" data-link="dental.html">
+                    <img src="https://images.pexels.com/photos/3845745/pexels-photo-3845745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Cirugías Dentales">
                     <div class="card-body">
                         <h3 class="card-title">Cirugías Dentales</h3>
                         <p class="card-text">Tratamientos dentales de alta calidad a precios asequibles.</p>
                         <ul>
-                            <li>Implantes Dentales: $800 - $1500 por implante</li>
+                            <li>Implantes Dentales: $80 - $1500 por implante</li>
                             <li>Coronas Dentales: $300 - $700 por corona</li>
                             <li>Blanqueamiento Dental: $200 - $400 por tratamiento</li>
                             <li>Ortodoncia (Brackets): $1000 - $3000 por tratamiento completo</li>
@@ -69,9 +84,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/piedras.jpg" class="card-img-top" alt="Pulverizaciones de Piedras">
+            <div class="col-md-4 mb-5" id="stone-services">
+                <div class="card" data-link="rinones.html">
+                    <img src="https://cdn.pixabay.com/photo/2017/03/28/21/28/kidney-2183443_1280.jpg" class="card-img-top min-size-img" alt="Pulverizaciones de Piedras">
                     <div class="card-body">
                         <h3 class="card-title">Pulverizaciones de Piedras</h3>
                         <p class="card-text">Eliminación de piedras en los riñones y vesícula con tecnología avanzada.</p>
@@ -85,9 +100,9 @@
                 </div>
             </div>
             
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/rinoplastia.jpg" class="card-img-top" alt="Rinoplastias">
+            <div class="col-md-4 mb-5" id="rhinoplasty-services">
+                <div class="card" data-link="nariz.html">
+                    <img src="https://images.pexels.com/photos/7480280/pexels-photo-7480280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top min-size-img" alt="Rinoplastias">
                     <div class="card-body">
                         <h3 class="card-title">Rinoplastias</h3>
                         <p class="card-text">Cirugías estéticas de nariz con resultados naturales.</p>
@@ -101,9 +116,9 @@
                 </div>
             </div>
             
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/liposuccion.jpg" class="card-img-top" alt="Liposucciones">
+            <div class="col-md-4 mb-5" id="liposuction-services">
+                <div class="card" data-link="lipo.html">
+                    <img src="https://images.pexels.com/photos/19447378/pexels-photo-19447378/free-photo-of-doctor-hands-applying-syringe-to-patient.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Liposucciones">
                     <div class="card-body">
                         <h3 class="card-title">Liposucciones</h3>
                         <p class="card-text">Procedimientos de liposucción seguros y efectivos.</p>
@@ -117,14 +132,14 @@
                 </div>
             </div>
             
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/rodillas.jpg" class="card-img-top" alt="Cirugías de Rodillas">
+            <div class="col-md-4 mb-4 mb-5" id="knee-services">
+                <div class="card" data-link="rodilla.html">
+                    <img src="https://images.pexels.com/photos/5069509/pexels-photo-5069509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Cirugías de Rodillas">
                     <div class="card-body">
                         <h3 class="card-title">Cirugías de Rodillas</h3>
                         <p class="card-text">Tratamientos quirúrgicos para problemas en las rodillas.</p>
                         <ul>
-                            <li>Artroscopia de Rodilla: $3000 - $5000</li>
+                            <li>Artroscopia de Rodilla: $300 - $5000</li>
                             <li>Reemplazo Parcial de Rodilla: $7000 - $12000</li>
                             <li>Reemplazo Total de Rodilla: $10000 - $20000</li>
                         </ul>
@@ -269,7 +284,7 @@
         </script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+       
         
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
