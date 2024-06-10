@@ -77,6 +77,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.location.href = link;
             }else if (link=="lipo.html") {
                 window.location.href = link;
+            }else if (link=="cabello.html") {
+                window.location.href = link;
             }
         });
     });
@@ -105,3 +107,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+// formulario----------------------------
+window.onscroll = function() {stickyForm()};
+
+function stickyForm() {
+    var form = document.getElementById("formulario");
+    console.log("Desplazamiento vertical: " + window.scrollY + "px");
+    console.log("Desplazamiento ancho: " + window.innerWidth + "px");
+    if (window.innerWidth > 768){
+    
+    if (window.scrollY > 395) {
+        form.classList.add("fixed");
+    } else {
+        form.classList.remove("fixed");
+    }
+    }else {
+        form.classList.remove("fixed");
+    }
+}
+
+// cookis-------------------------
+document.getElementById('acceptCookies').onclick = function() {
+    document.getElementById('cookieConsent').style.display = 'none';
+};
